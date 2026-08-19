@@ -38,12 +38,16 @@ An agent cannot advance its own work. Not by asking nicely, not by editing a fil
 
 ## Three agents, one human gate
 
+![How the work moves — each stage owned by one agent, every gate pressed by a human](media/05-workflow.png)
+
 Each agent has a fixed job, and no agent may change its own:
 
 - **Grok** — asks the questions, writes the plan, owns the design
-- **Claude** — builds
-- **Codex** — reads the code another agent wrote and reports the bugs in plain language
+- **Codex** — writes the checklist before the build, then reads the code another agent wrote and reports the bugs in plain language
+- **Claude** — builds, and tests against a list he didn't write
 - **You** — decide
+
+**The checklist is the newest stage, going in now.** Before anything is built, the reviewer writes down what has to be true for the work to be finished. The builder then tests against that list — so nobody marks their own homework.
 
 **No agent reviews its own work.** The reviewer exists for a specific reason: the person holding the gate may not read code. So a second agent reads it for them and writes what's wrong in words they can act on. You still press Accept — but you press it informed.
 
