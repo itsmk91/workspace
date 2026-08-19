@@ -121,7 +121,9 @@ The pattern is the whole point. A bug gets fixed, then written down. If it keeps
 
 Thirty-four agent skills, continuously audited across Claude, Codex and the open Agent Skills contract — checked for structure, portability, trigger conflicts and safety signals. Read-only: nothing is executed to inspect it.
 
-The system checks its own tools, and reports what it finds.
+The system checks its own tools, and reports what it finds. It checks the projects the same way — the real code behind each one, read before an agent is allowed to change it.
+
+The pattern behind both — evidence with a location, a labelled confidence, and a checker that is never allowed to fix what it found — is written up on its own: **[Health checks for AI agents](https://github.com/itsmk91/agent-health-checks)**.
 
 ---
 
