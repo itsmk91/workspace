@@ -49,6 +49,8 @@ Each agent has a fixed job, and no agent may change its own:
 
 Swapping who builds and who reviews is a human button, and it lasts exactly one task.
 
+The general pattern behind this — roles that can't change, one owner per task, nothing reviewing itself — is written up on its own: **[Separation of duties for AI agents](https://github.com/itsmk91/agent-separation-of-duties)**.
+
 ---
 
 ## The law
