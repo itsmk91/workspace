@@ -93,6 +93,20 @@ One rule keeps the textbook honest: **every** fix goes in the diary, but only a 
 
 176 things went wrong in four weeks. That isn't a failure record. It's **176 traps that are now mapped**, and the next agent walks past all of them.
 
+### The problems didn't just make rules — they made tools
+
+Some of the agents' own skills exist only because something went wrong first. Each of these was written here, for this system, after a specific failure:
+
+- **A skills auditor.** Two skills quietly ended up competing for the same job. Because agents pick a skill by reading its description, two overlapping descriptions make the choice unpredictable — so it didn't present as a duplicate, it presented as a *random bug*. Whole work sessions went into unpicking it. The answer was a read-only auditor that checks every installed skill for duplicate names, clashing triggers, broken structure and safety signals, so a clash surfaces the same day instead of three weeks later as a mystery.
+
+- **A repair workflow.** Once the auditor started finding things, it turned out the ecosystem was full of tools that *diagnose* a broken skill and none that safely *fix* one. So one got built: back up first, apply the smallest change that works, re-audit, and show before-and-after proof.
+
+- **A front-door guard.** One briefing was rejected five times in a row. Every rejection traced back to the same root cause — a question nobody asked before building. So the asking became a tool: clarifying questions, click-to-answer, before a plan exists, ending with the task replayed back in the person's own words for a yes.
+
+- **A peer reviewer.** *"I'm not a developer — even if I read the code I won't understand it."* That sentence became a skill: a second agent reads the code the first one wrote and reports the bugs in plain language, on the card, before anything is approved.
+
+The pattern is the whole point. A bug gets fixed, then written down. If it keeps happening, it becomes a rule. If the rule needs enforcing, it becomes a guard. And if the work itself keeps repeating, **it becomes a tool** — so nobody has to remember to do it right.
+
 ---
 
 ## The toolbox, audited
