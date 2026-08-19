@@ -69,6 +69,32 @@ And the rules aren't advice. Four guards sit between the agent and your machine 
 
 ---
 
+## The memory
+
+Every bug this system has ever hit is written down — not in someone's head, but in a folder the agents are required to read *before* they touch anything.
+
+It holds three kinds of note:
+
+- **A diary.** What broke, what fixed it, which project, what date. Specific, not wise. **176 entries so far.**
+- **A textbook.** The lesson *behind* a fix, once it turns out to be bigger than the bug that caused it. Not *"the button was the wrong colour"* but *"a disabled button with custom colours looks enabled and dies silently."* **145 of them.**
+- **A map.** How a piece of the machinery actually works, written down so nobody has to re-derive it.
+
+One rule keeps the textbook honest: **every** fix goes in the diary, but only a fix a future agent would hit again — different project, different month — gets promoted to a lesson. One-offs stay one-offs, so the textbook never fills with noise.
+
+### Why it exists
+
+**An agent's memory ends when the session does.** Whatever it works out today, it has forgotten by tomorrow. Without somewhere to put what it learned, every session starts from zero and the same ground gets covered forever.
+
+**The same bugs were being solved twice** — and sometimes solved *differently* the second time, so the new fix quietly undid the old one. A fix costs an hour once. Re-guessing it costs an hour every time it comes back.
+
+**Writing it down is only half of it.** The other half is a search that runs *before* anyone theorises about a cause. Record without recall is a diary nobody reads.
+
+**And it compounds.** The rules in this system weren't designed in the abstract. The guards, the agent lanes, the scope check — each one exists because the diary showed the same shape of mistake twice. Every rule was a scar somebody wrote down first.
+
+176 things went wrong in four weeks. That isn't a failure record. It's **176 traps that are now mapped**, and the next agent walks past all of them.
+
+---
+
 ## The toolbox, audited
 
 ![Skills — 34 audited, zero broken](media/04-skills.png)
