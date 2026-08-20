@@ -22,9 +22,9 @@ Agents read an idea, ask questions until they actually understand it, write a pl
 
 ![Backloop — the human-gated pipeline](media/02-backloop.png)
 
-Work moves through five stages: **idea → plan → active → review → complete**.
+Work moves through six stages: **idea → plan → checklist → active → review → complete**.
 
-An agent makes exactly two of those moves — drafting the plan, and delivering the finished work for review. The three in between are pressed by a human:
+An agent makes exactly three of those moves — drafting the plan, writing the checklist another agent will be tested against, and delivering the finished work for review. The three gates in between are pressed by a human:
 
 - **Commit** — you've read the plan and you're authorising the build
 - **Accept** — you've reviewed the result and it lands
@@ -47,7 +47,7 @@ Each agent has a fixed job, and no agent may change its own:
 - **Claude** — builds, and tests against a list he didn't write
 - **You** — decide
 
-**The checklist is the newest stage, going in now.** Before anything is built, the reviewer writes down what has to be true for the work to be finished. The builder then tests against that list — so nobody marks their own homework.
+**The checklist is the newest stage.** Before anything is built, the reviewer writes down what has to be true for the work to be finished. The builder then tests against that list — so nobody marks their own homework.
 
 **No agent reviews its own work.** The reviewer exists for a specific reason: the person holding the gate may not read code. So a second agent reads it for them and writes what's wrong in words they can act on. You still press Accept — but you press it informed.
 
@@ -72,6 +72,24 @@ A few of them:
 - **Design comes first.** The look is decided deliberately, before a line of interface is written.
 
 And the rules aren't advice. Four guards sit between the agent and your machine and **refuse**: destructive commands, edits outside an agent's assigned lane, a font that isn't in the project's design law, a stray API key or network call slipping into a build. Each one fails closed — unreadable input is a denial, not a pass.
+
+---
+
+## The door the agents come through
+
+![The MCP layer — eleven tools, and the three that approve work are not among them](media/06-mcp.png)
+
+The agents never reach the board directly. They reach it through a small local server that hands them a fixed set of tools — MCP, the open protocol most of this space now speaks.
+
+That list is the entire world they can touch. **Eleven tools: five that read the board, six that write to it.**
+
+Commit, Accept and Reject are not on it.
+
+So an agent can plan a task, build it, and hand it back for review — and then it stops. Not because a rule told it to. Because there is no function to call. A rule can be argued with; a missing verb cannot.
+
+It runs as a plain local process on your own machine. No port is opened, no API key exists, nothing leaves the laptop.
+
+**The strongest rule is the one that doesn't need enforcing.**
 
 ---
 
