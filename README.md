@@ -71,7 +71,38 @@ A few of them:
 - **Ask until you understand.** The stop condition isn't a question count — it's replaying the task back in your own words and hearing *"yes, that's it."*
 - **Design comes first.** The look is decided deliberately, before a line of interface is written.
 
-And the rules aren't advice. Four guards sit between the agent and your machine and **refuse**: destructive commands, edits outside an agent's assigned lane, a font that isn't in the project's design law, a stray API key or network call slipping into a build. Each one fails closed — unreadable input is a denial, not a pass.
+And the rules aren't advice. **Six guards** sit between the agent and your machine and **refuse**. Each one fails closed — unreadable input is a denial, not a pass. They are the next section.
+
+---
+
+## The guards that run first
+
+![The harness — the action, the guard, and the three answers](media/07-harness.png)
+
+Rules written in a document are advice. A model can forget advice.
+
+So the rules that matter most don't live in a document. They live in six small programs that run **before** any tool does. Every time an agent is about to write a file, edit one, or run a command, those programs read the action first and answer one of three things:
+
+| Answer | What it covers |
+| --- | --- |
+| **Allow** | Reads, new files, safe commands — it just happens |
+| **Ask me** | An existing file, an install, a commit — it waits for the human's word |
+| **Deny** | Destructive commands, the task files, the three human gates — it never runs |
+
+The six:
+
+| Guard | What it watches |
+| --- | --- |
+| `permission-gate` | Adding and deleting belong to the human |
+| `scope-guard` | Asks before any key, secret or network call is introduced |
+| `recommend-guard` | No fixing before the reviewer's findings have been read |
+| `font-guard` | No font that isn't in the project's design file |
+| `agent-lane-guard` | An agent works only its own task, never another's |
+| `vault-write-guard` | One folder stays untouched |
+
+They sit outside the conversation. An agent can't talk one of them into a different answer, because the answer isn't produced by talking — the guard runs before the tool, reads the actual command, and returns allow, ask or deny.
+
+**That is the difference between a rule and a guard. A rule is a sentence that has to be remembered. A guard runs every single time.**
 
 ---
 
