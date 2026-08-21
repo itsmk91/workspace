@@ -77,7 +77,7 @@ The general pattern behind this — roles that can't change, one owner per task,
 
 ![Knowledge — the rules that govern the AI, live-mirrored and read-only](media/03-rules.png)
 
-Twenty-four standing rules the agents load at the start of every session. **Each one is written together with the failure that produced it** — the wrong build, the lost afternoon, the thing that nearly shipped.
+Twenty-seven standing rules the agents load at the start of every session. **Each one is written together with the failure that produced it** — the wrong build, the lost afternoon, the thing that nearly shipped.
 
 A few of them:
 
