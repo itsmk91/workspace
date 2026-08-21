@@ -182,4 +182,4 @@ Electron · Node · macOS. Offline by default — it reads your projects live fr
 
 ---
 
-<sub>Source kept private. · [LinkedIn](https://www.linkedin.com/in/mohammad-aljaziri-940750105/)</sub>
+<sub>by Workspace Labs · Source kept private. · [LinkedIn](https://www.linkedin.com/in/mohammad-aljaziri-940750105/)</sub>
