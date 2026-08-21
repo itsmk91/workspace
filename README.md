@@ -172,7 +172,7 @@ Thirty-four agent skills, continuously audited across Claude, Codex and the open
 
 The system checks its own tools, and reports what it finds. It checks the projects the same way — the real code behind each one, read before an agent is allowed to change it.
 
-The pattern behind both — evidence with a location, a labelled confidence, and a checker that is never allowed to fix what it found — is written up on its own: **[Health checks for AI agents](https://github.com/itsmk91/agent-health-checks)**.
+The pattern behind both — evidence with a location, a labelled confidence, and a checker that is never allowed to fix what it found — is written up on its own, and **both checkers are there to take**: **[Health checks for AI agents](https://github.com/itsmk91/agent-health-checks)** — two dependency-free Node scripts, MIT licensed.
 
 ---
 
