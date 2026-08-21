@@ -34,6 +34,22 @@ An agent cannot advance its own work. Not by asking nicely, not by editing a fil
 
 **Every delivery arrives with proof:** a before-and-after picture and a plain-language note explaining what changed. You review the card, not the codebase.
 
+**A card says one thing.** On the board it carries a short title, its project, and its buttons — the idea itself stays hidden until you open it. Open it and it goes wide rather than long: each section becomes its own column — idea, plan, checklist, work, review, history — and every point of a plan is its own tile you can click and read in full. Empty columns disappear so the filled ones get the room.
+
+---
+
+## The trail
+
+![Notes — one line per task, and the whole journey of the one you pick](media/08-notes.png)
+
+The board shows what is happening. This shows what happened.
+
+Every task is one line, newest first — title, the stage it reached, and when it last moved. Pick one and its journey opens beside it: the six stages with the time it passed each, and a log of every move in plain language, including the moments the work stopped and waited for a person to answer.
+
+Completed notes leave this view after seven days. Live work stays, however old it is.
+
+**No task file is ever deleted.** The view empties. The record doesn't.
+
 ---
 
 ## Three agents, one human gate
