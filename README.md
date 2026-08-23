@@ -75,6 +75,8 @@ The general pattern behind this — roles that can't change, one owner per task,
 
 ## Watching them work
 
+![Agents Labs — Grok, Claude and Codex on one terminal glass inside the app](media/09-agents-labs.png)
+
 For months the three agents lived in a Terminal window behind the app. I'd press Commit on the board, then switch away from the board to see what happened next.
 
 They're in the same window now. Under Intelligence there's **Agents Labs**: Grok planning, Claude building, Codex reviewing.
