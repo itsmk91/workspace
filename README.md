@@ -73,6 +73,24 @@ The general pattern behind this — roles that can't change, one owner per task,
 
 ---
 
+## Watching them work
+
+For months the three agents lived in a Terminal window behind the app. I'd press Commit on the board, then switch away from the board to see what happened next.
+
+They're in the same window now. Under Intelligence there's **Agents Labs**: Grok planning, Claude building, Codex reviewing.
+
+It isn't a copy of that terminal, and it isn't a log of it. It's the same session the Mac is already running, drawn inside the app — the same colours, the same live output, and a click on a pane puts my typing into that agent.
+
+- **Start** — attaches to the crew already running, and builds it first if there isn't one
+- **Fresh** — rebuilds all three, then attaches
+- **Stop watching** — lets go of the picture, never of the crew
+
+That last line is the whole design. Stopping watching is the app closing its own eyes, not closing anyone's work: the three keep going, and the picture comes back the moment I press Start.
+
+The gates didn't move. Commit, Accept and Reject are still mine — and there's still no command an agent can run to press them.
+
+---
+
 ## The law
 
 ![Knowledge — the rules that govern the AI, live-mirrored and read-only](media/03-rules.png)
