@@ -73,21 +73,20 @@ The general pattern behind this — roles that can't change, one owner per task,
 
 ---
 
-## Watching them work
+## The biggest update yet — Agents Labs
 
 ![Agents Labs — Grok, Claude and Codex on one terminal glass inside the app](media/09-agents-labs.png)
 
-For months the three agents lived in a Terminal window behind the app. I'd press Commit on the board, then switch away from the board to see what happened next.
+The three agents that plan, build and review my projects used to live in a Terminal window behind the app. Now they run inside it.
 
-They're in the same window now. Under Intelligence there's **Agents Labs**: Grok planning, Claude building, Codex reviewing.
+**What's new:**
 
-It isn't a copy of that terminal, and it isn't a log of it. It's the same session the Mac is already running, drawn inside the app — the same colours, the same live output, and a click on a pane puts my typing into that agent.
+- **One live terminal, inside the app** — Grok planning, Claude building, Codex reviewing
+- **The same session my Mac was already running** — not a copy of it, and not a log of it
+- **Click a pane and type straight into that agent** — the same colours, the same live output
+- **Start** attaches · **Fresh** rebuilds the crew · **Stop watching** lets go of the picture, never of the crew
 
-- **Start** — attaches to the crew already running, and builds it first if there isn't one
-- **Fresh** — rebuilds all three, then attaches
-- **Stop watching** — lets go of the picture, never of the crew
-
-That last line is the whole design. Stopping watching is the app closing its own eyes, not closing anyone's work: the three keep going, and the picture comes back the moment I press Start.
+That last one is the whole design. Stopping watching is the app closing its own eyes, not closing anyone's work: the three keep going, and the picture comes back the moment I press Start.
 
 The gates didn't move. Commit, Accept and Reject are still mine — and there's still no command an agent can run to press them.
 
