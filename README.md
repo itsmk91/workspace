@@ -211,6 +211,27 @@ The pattern behind both — evidence with a location, a labelled confidence, and
 
 ---
 
+## The clinic that remembers
+
+![The Skill Clinic receipt — a finding already accepted does not come back as a fourth card](media/10-skill-clinic.png)
+
+A checker that isn't allowed to fix anything has to hand its finding to someone. Here it doesn't land in a report I have to remember — **it becomes a real card on my board**, and walks the same gates as everything else: planned, given an exam, built, reviewed, and Accepted by me.
+
+Then one finding came back. Same skill, same line, same fingerprint. Three times.
+
+Nothing was broken. The duplicate guard was only holding a finding while a card was still **open**, so carrying one to done released it — **my own Accept was what let it back in.** Each return cost a full plan, exam, build and review for a question I had already answered.
+
+**What's new:**
+
+- **A card I finished keeps answering.** Send the same finding again and the app shows a receipt — *you accepted this on this card, the skill has not changed, so no new idea was created*
+- **The finding is still on screen.** Declining to re-file it is not hiding it: the row keeps its severity, its message and its Send button, and gains a chip naming the card I accepted it on
+- **Re-open anyway is mine.** One click, and it files an ordinary card whose first line names the one it re-opens — so a repeat never arrives looking like an unknown first finding
+- **No expiry, no settings file.** Change the skill and the fingerprint changes with it, so a real change still files a real card
+
+That last one is the design. There is nothing to maintain and nothing to switch off — **the cards I already carried to done are the list.** The decisions are the memory.
+
+---
+
 ## What it's built on
 
 Electron · Node · macOS. Offline by default — it reads your projects live from disk and never copies your code anywhere.
