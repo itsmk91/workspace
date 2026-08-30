@@ -4,7 +4,7 @@
 
 > A showcase of a private project. Screenshots and design, not source.
 
-![Overview — every project, agent, skill and rule as one live map](media/01-overview.png)
+![Overview — ten places in one orbit, every count read live](media/01-overview.png)
 
 ---
 
@@ -15,6 +15,36 @@ AI agents are fast, confident, and occasionally wrong in ways you only discover 
 Agents read an idea, ask questions until they actually understand it, write a plan, and do the work. What they never do is decide the work is finished.
 
 **Every gate belongs to a person.**
+
+---
+
+## The look I drew
+
+**I did not describe the redesign. I drew it.** Nine pictures of how I wanted each window
+to look went into a folder on my desktop, and that folder was the whole brief.
+
+What happened next is the board doing its ordinary job. Grok built a clickable demo of all
+nine windows in HTML and I accepted the shape before a line of the real app moved. Codex
+wrote the exam the build would be tested against. Claude built it. Codex scanned it twice
+and sent it back twice — once because a proof gate was quietly green on one version of Node
+and red on another, once because the delivery note described a screen that was not the one
+shipping. Then I pressed Accept.
+
+**Light is the only theme now.** Not a toggle switched to light — the dark palette, both
+theme blocks, the system-preference branch and the Settings control are gone. A window that
+can only be one thing cannot drift into looking like two.
+
+- **Overview became an orbit.** Ten places circle the centre, each carrying a real count
+  read from the live board. Hovering pauses the turn, so nothing dodges the click it is
+  asking for.
+- **New type throughout** — bundled inside the app, never fetched from anywhere. This app
+  makes no network call, and a font is a network call.
+- **Every accent colour was measured, not eyeballed.** One of the six sat at 2.30:1 against
+  the new light background and simply could not be read. All six pass now, and a test fails
+  if the written numbers and the shipped colours ever disagree.
+- **Line icons, one mark per window.** Emoji are still never icons.
+
+The look is new. Who presses the buttons is not — Commit, Accept and Reject are still mine.
 
 ---
 
@@ -96,7 +126,7 @@ The gates didn't move. Commit, Accept and Reject are still mine — and there's 
 
 ![Knowledge — the rules that govern the AI, live-mirrored and read-only](media/03-rules.png)
 
-Twenty-seven standing rules the agents load at the start of every session. **Each one is written together with the failure that produced it** — the wrong build, the lost afternoon, the thing that nearly shipped.
+Twenty-eight standing rules the agents load at the start of every session. **Each one is written together with the failure that produced it** — the wrong build, the lost afternoon, the thing that nearly shipped.
 
 A few of them:
 
@@ -165,8 +195,8 @@ Every bug this system has ever hit is written down — not in someone's head, bu
 
 It holds three kinds of note:
 
-- **A diary.** What broke, what fixed it, which project, what date. Specific, not wise. **176 entries so far.**
-- **A textbook.** The lesson *behind* a fix, once it turns out to be bigger than the bug that caused it. Not *"the button was the wrong colour"* but *"a disabled button with custom colours looks enabled and dies silently."* **145 of them.**
+- **A diary.** What broke, what fixed it, which project, what date. Specific, not wise. **229 entries so far.**
+- **A textbook.** The lesson *behind* a fix, once it turns out to be bigger than the bug that caused it. Not *"the button was the wrong colour"* but *"a disabled button with custom colours looks enabled and dies silently."* **201 of them.**
 - **A map.** How a piece of the machinery actually works, written down so nobody has to re-derive it.
 
 One rule keeps the textbook honest: **every** fix goes in the diary, but only a fix a future agent would hit again — different project, different month — gets promoted to a lesson. One-offs stay one-offs, so the textbook never fills with noise.
@@ -181,7 +211,7 @@ One rule keeps the textbook honest: **every** fix goes in the diary, but only a 
 
 **And it compounds.** The rules in this system weren't designed in the abstract. The guards, the agent lanes, the scope check — each one exists because the diary showed the same shape of mistake twice. Every rule was a scar somebody wrote down first.
 
-176 things went wrong in four weeks. That isn't a failure record. It's **176 traps that are now mapped**, and the next agent walks past all of them.
+229 things went wrong in five weeks. That isn't a failure record. It's **229 traps that are now mapped**, and the next agent walks past all of them.
 
 ### The problems didn't just make rules — they made tools
 
